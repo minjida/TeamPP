@@ -1,0 +1,250 @@
+**********1************
+package yoon;
+
+import java.util.Scanner;
+
+public class yoon 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		int x, y, z;
+		
+		System.out.println("정수 입력 : ");
+		z = sc.nextInt();
+		
+		for(y = 0; y < z; y ++)
+		{
+			for(x = 0; x < z - y; x ++)
+				System.out.printf(" ");
+			for(x = z - y; x <= z + y; x ++)
+				System.out.printf("*");
+			System.out.println("");			
+		}
+	}
+}
+
+**********1************
+
+
+
+**********2************
+
+package yoon;
+
+import java.util.Scanner;
+
+public class yoon 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		int x, y, z;
+		
+		System.out.println("정수 입력 : ");
+		z = sc.nextInt();
+		
+		for(y = 0; y < z / 2; y ++)
+		{
+			for(x = 0; x < z - y; x ++)
+				System.out.printf(" ");
+			for(x = z - y; x <= z + y; x ++)
+				System.out.printf("*");
+			System.out.println("");			
+		}
+		
+		for(y = z / 2; y >= 0; y --)
+		{
+			for(x = 0; x < z - y; x ++)
+				System.out.printf(" ");
+			for(x = z - y; x <= z + y; x ++)
+				System.out.printf("*");
+			System.out.println("");	
+		}
+	}
+}
+
+**********2************
+
+
+**********3************
+package yoon;
+
+import java.util.Scanner;
+
+public class yoon 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		int x, y, z;
+		
+		System.out.println("정수 입력 : ");
+		z = sc.nextInt();
+		
+		for(y = 0; y < z / 2; y ++)
+		{
+			for(x = 0; x < z - (z - y); x ++)
+				System.out.printf(" ");
+			for(x = y; x <= z - y; x ++)
+				System.out.printf("*");
+			System.out.println("");			
+		}
+		
+		for(y = z / 2; y >= 0; y --)
+		{
+			for(x = 0; x < z - (z - y); x ++)
+				System.out.printf(" ");
+			for(x = y; x <= z - y; x ++)
+				System.out.printf("*");
+			System.out.println("");			
+		}
+	}
+}
+
+**********3************
+
+
+**********4************
+package yoon;
+
+import java.util.Scanner;
+
+public class yoon 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		int x, y, z;
+		
+		System.out.println("정수 입력 : ");
+		z = sc.nextInt();
+		
+		for(y = 0; y < z / 2; y ++)
+		{
+			for(x = 0; x < z - y; x ++)
+				System.out.printf(" ");
+			for(x = z - y; x <= z; x ++)
+				System.out.printf("*");
+			for(x = z + 1; x <= z + y; x ++)
+			{
+				if(x == z + y)
+					System.out.printf("*");
+				else
+					System.out.printf(" ");
+			}
+			System.out.println("");			
+		}
+		
+		for(y = z / 2; y >= 0 / 2; y --)
+		{
+			for(x = 0; x < z - y; x ++)
+				System.out.printf(" ");
+			for(x = z - y; x <= z; x ++)
+				System.out.printf("*");
+			for(x = z + 1; x <= z + y; x ++)
+			{
+				if(x == z + y)
+					System.out.printf("*");
+				else
+					System.out.printf(" ");
+			}
+			System.out.println("");			
+		}
+	}
+}
+**********4************
+
+
+**********5************
+package yoon;
+
+import java.util.Scanner;
+
+public class yoon 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		int x, y, z;
+		
+		System.out.println("정수 입력 : ");
+		z = sc.nextInt();
+		
+		for(y = 0; y < (z + 1) / 2; y ++)
+		{
+			for(x = 0; x < z - y; x ++)
+				System.out.printf("    ");
+			for(x = z - y; x <= z + y; x ++)
+			{
+				if(x == z - y || x == z + y)
+					System.out.printf("★");
+				else
+					System.out.printf("    ");
+			}
+			System.out.println("");			
+		}
+		
+		for(y = z / 2; y >= 0; y --)
+		{
+			for(x = 0; x < y; x ++)
+				System.out.printf("    ");
+			for(x = y; x < z - y; x ++)
+				System.out.printf("☆");
+			for(x = z - y; x <= z + y; x ++)
+				System.out.printf("★");
+			for(x = z + y + 1; x <=z + (z - y); x ++)
+				System.out.printf("☆");
+			System.out.println("");			
+		}
+	}
+}
+**********5************
+
+
+**********6************
+package yoon;
+
+import java.util.Scanner;
+
+public class yoon 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		int x, y, z;
+		
+		System.out.println("정수 입력 : ");
+		z = sc.nextInt();
+		
+		for(y = 0; y < z; y ++)
+		{
+			if(y == z - 1)
+			{
+				System.out.printf(" ");
+				for(x = z - y; x <= z + y; x ++)
+					System.out.printf("*");				
+			}
+			else
+			{
+				for(x = 0; x < z - y; x ++)
+					System.out.printf(" ");
+				for(x = z - y; x <= z + y; x ++)
+				{
+					if(x == z - y || x == z + y)
+						System.out.printf("*");
+					else
+						System.out.printf(" ");
+				}
+				System.out.println("");		
+			}
+		}
+	}
+}
+**********6************
